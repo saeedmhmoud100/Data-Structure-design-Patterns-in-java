@@ -2,6 +2,9 @@ package sort;
 
 public class BubbleSort {
     public static void BubbleSort(int arr[]){
+        //worst case n^2
+        //best case  n
+
         double c = System.currentTimeMillis();
         for(int i=0;i<arr.length;i++){
             boolean swap = false;  //------ to check if its sorted then break
