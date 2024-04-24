@@ -11,20 +11,6 @@ public class BinarySearchTree {
         root = insertRec(root, data);
     }
 
-    public Node insertRec(Node root, int data){
-        if(root == null){
-            root = new Node(data);
-            return root;
-        }
-
-        if(data < root.data){
-            root.left = insertRec(root.left, data);
-        }else {
-            root.right = insertRec(root.right, data);
-        }
-
-        return root;
-    }
 
     public void printInOrder(){
         printInOrder(root);
@@ -38,6 +24,41 @@ public class BinarySearchTree {
         printPostOrder(root);
     }
 
+
+    public Node search(int data){
+        return searchRec(root, data);
+    }
+
+    private Node searchRec(Node root, int data){
+        if(root == null || root.data == data){
+            return root;
+        }
+
+        if(data < root.data){
+            return searchRec(root.left, data);
+        } else {
+            return searchRec(root.right, data);
+        }
+
+    }
+
+
+
+
+    private Node insertRec(Node root, int data){
+        if(root == null){
+            root = new Node(data);
+            return root;
+        }
+
+        if(data < root.data){
+            root.left = insertRec(root.left, data);
+        }else {
+            root.right = insertRec(root.right, data);
+        }
+
+        return root;
+    }
 
     private void printInOrder(Node root){
         // left, root, right
