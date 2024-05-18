@@ -8,5 +8,8 @@ public class Main {
         heap.buildHeap(arr, n);
         heap.printHeap(arr, n);
 
+        heap.heapify(arr, n, 0); // Heapify the heap
+        heap.printHeap(arr, n);
+
     }
 }
