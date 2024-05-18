@@ -66,15 +66,15 @@ public class BinarySearchTree {
                 root.data = root.left.data;
                 root.left = null;
             } else { // case 3: two children
-                if (root.left != null) {
+                    // find the maximum in the left subtree
                     Node predecessor = findMaxRec(root.left);
                     root.data = predecessor.data;
                     root.left = deleteRec(root.left, predecessor.data);
-                } else {
-                    Node successor = findMinRec(root.right);
-                    root.data = successor.data;
-                    root.right = deleteRec(root.right, successor.data);
-                }
+
+                    // find the minimum in the right subtree
+//                    Node successor = findMinRec(root.right);
+//                    root.data = successor.data;
+//                    root.right = deleteRec(root.right, successor.data);
             }
         }
 
