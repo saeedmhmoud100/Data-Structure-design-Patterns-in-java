@@ -1,8 +1,8 @@
-package DesignPattrens.FactoryPattern;
+package DesignPattrens.FactoryPattern.Solution.Scenario_1;
 
-import DesignPattrens.FactoryPattern.Solution.IAnimal;
-import DesignPattrens.FactoryPattern.Solution.IAnimalFactory;
-import DesignPattrens.FactoryPattern.Solution.RandomFactory;
+import DesignPattrens.FactoryPattern.Solution.Scenario_1.IAnimal;
+import DesignPattrens.FactoryPattern.Solution.Scenario_1.IAnimalFactory;
+import DesignPattrens.FactoryPattern.Solution.Scenario_1.RandomFactory;
 
 public class Main {
     public static void main(String[] args) {
