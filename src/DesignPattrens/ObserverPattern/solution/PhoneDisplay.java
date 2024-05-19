@@ -1,4 +1,4 @@
-package DesignPattrens.ObserverPattern.problem;
+package DesignPattrens.ObserverPattern.solution;
 
 public class PhoneDisplay implements IObserver{
     private WeatherStation station;

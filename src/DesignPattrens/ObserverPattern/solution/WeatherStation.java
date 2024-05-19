@@ -1,4 +1,4 @@
-package DesignPattrens.ObserverPattern.problem;
+package DesignPattrens.ObserverPattern.solution;
 
 import java.util.List;
 

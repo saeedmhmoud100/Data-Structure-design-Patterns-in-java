@@ -1,7 +1,7 @@
 package DesignPattrens.ObserverPattern;
 
-import DesignPattrens.ObserverPattern.problem.PhoneDisplay;
-import DesignPattrens.ObserverPattern.problem.WeatherStation;
+import DesignPattrens.ObserverPattern.solution.PhoneDisplay;
+import DesignPattrens.ObserverPattern.solution.WeatherStation;
 
 public class Main {
     public static void main(String[] args){

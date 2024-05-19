@@ -1,4 +1,4 @@
-package DesignPattrens.ObserverPattern.problem;
+package DesignPattrens.ObserverPattern.solution;
 
 public interface IObservable {
     void addObserver(IObserver observer);
